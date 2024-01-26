@@ -21,5 +21,15 @@ describe('findPairWithSum', () => {
     
    });
 
-
+describe('NonConstructibleChange', () =>{
+    it('Should return 4 with the array [1, 2, 5]', ()=>{
+        expect(NonConstructibleChange([1, 2, 5])).toBe(4)
+    });
+    it('Should return 20 with the array [5, 7, 1, 1, 2, 3, 22]', ()=>{
+        expect(NonConstructibleChange([5, 7, 1, 1, 2, 3, 22])).toBe(20)
+    });
+    it('Should return 1 with a empty array', ()=>{
+        expect(NonConstructibleChange([])).toBe(1)
+    })
+})
 
