@@ -26,42 +26,30 @@ const findPairWithSum = (num, targetSum) => {
   return output;
 };
 
-
 // exercise 2:
 
 // Given an array of positive integers representing the values of coins in your possession, write a function that returns the minimum amount of change (the minimum sum of money) that you *cannot* create. The given coins can have any positive integer value and aren’t necessarily unique (i.e., you can have multiple coins of the same value).
 
-// For example, if you’re given coins = [1, 2, 5], the minimum amount of change that you can’t create is 4. If you’re given no coins, the minimum amount of change that you can’t create is 1.
 
-// ### *Sample Input*
-
-// coins = [5, 7, 1, 1, 2, 3, 22]
-
-// ### *Sample Output*
-
-// 20
-
-
+//New arrow function created with name NonConstructibleChange
 const NonConstructibleChange = (coins) => {
+  //Sort the numbers of the array from min to max
   coins.sort((a, b) => a - b);
+  // currentChange variable is initialized to 0
   let currentChange = 0;
 
+  //loop for... of to iterate the array coins
   for (const coin of coins) {
-    if(coin <= currentChange + 1){
+
+    //checks if the current coin is less than or equal to the current change +1, if it is it adds coin to the currentChange, otherwise it returns the currentChange and adds 1 to it
+    if (coin <= currentChange + 1) {
       currentChange += coin;
     } else {
       return currentChange + 1;
     }
   }
-
-return currentChange + 1;
-}
-
-const exampleCoins = [5,7,1,1,2,3,22];
-const resultado = NonConstructibleChange(exampleCoins);
-
-console.log("Cantidad minima de cambio no contruible: ",resultado)
-
-
+  //Once the array has been traversed and the value of currentChange has been updated, it returns the value of currentChange and I add 1 to it
+  return currentChange + 1;
+};
 
 module.exports = { findPairWithSum, NonConstructibleChange };
