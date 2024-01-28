@@ -8,6 +8,11 @@ module.exports = {
     'plugin:react/recommended',
     
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   'overrides': [
     {
       'env': {
@@ -30,5 +35,6 @@ module.exports = {
   ],
   'rules': {
     'require-jsdoc': 'off',
+    'indent': ['error', 2]
   },
 };
