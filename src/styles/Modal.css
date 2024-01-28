@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F0E678;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .modalContent {
+    position: relative;
+    height: 45vh;
+    width: 30vw;
+    min-height: 300px;
+    min-width: 100px;
+    background: #F8AF52;
+    border: 2px solid white;
+    z-index: 1200;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+  
+  
+    margin: auto;
+    text-align: center;
+  }
+  
+ .modalTitle {
+    color: #000000;
+    margin-top: 0px;
+  }
+  
+  .buttonBox {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 30vw;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 25vh;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F0C978;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #DEF078;
+  }
+  
+  button:hover {
+    background-color: #DF912A;
+  }
+  
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .closeButtonModal {
+    color: black;
+    background-color: rgba(255, 0, 0, 0.6);
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .closeButtonModal:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+  }
+  
+  .formModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .formModal label,
+  .formModal input {
+    margin-bottom: 10px;
+  }
+  
+  .formModal input {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .formModal button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .results{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .containerModal{
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  }

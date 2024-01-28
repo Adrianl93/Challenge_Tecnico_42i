@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from 'react';
-import FindPairWithSum from "./FindPairWithSum";
-import NonContructibleChange from "./NonContructibleChange";
-
+import ModalFindPair from "./ModalFindPair";
+import ModalNonContructible from "./ModalNonContructible";
+import "../styles/Home.css"
 const Home = () => {
   
     const [modalOne, setModalOne] = useState(false);
@@ -21,20 +21,21 @@ const Home = () => {
     return (
       <div>
         {
-            modalOne ?  <FindPairWithSum
+            modalOne ?  <ModalFindPair
             modalTwo={modalTwo}
             setModalOne={setModalOne}/> : <></>
             
         }
         {
-            modalTwo ? <NonContructibleChange
+            modalTwo ? <ModalNonContructible
             modalTwo={modalTwo}
             setModalTwo={setModalTwo}/> : <></>
         }
         <h1>Challenge 42i</h1>
-      
+      <div className="buttonBox">
       <button onClick={(e) => {handleModalOne(e)}}>Find Pair With Sum</button>
       <button onClick={(e) => {handleModalTwo(e)}}>Non Constructible Change</button>
+      </div>
       </div>
     );
   }
