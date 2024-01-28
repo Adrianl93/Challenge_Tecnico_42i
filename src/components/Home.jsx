@@ -19,7 +19,7 @@ const Home = () => {
     }
 
     return (
-      <div>
+      <div className="containerHome">
         {
             modalOne ?  <ModalFindPair
             modalTwo={modalTwo}

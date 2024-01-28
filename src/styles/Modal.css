@@ -124,3 +124,27 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   }
+
+
+  @media screen and (max-width: 768px) {
+    .modalContent {
+      width: auto;
+    }
+    .closeButtonModal{
+      width: 10vw;
+    }
+   
+
+  }
+
+  
+  @media screen and (max-width: 500px) {
+    .modalContent {
+      width: auto;
+      
+    }
+    .closeButtonModal{
+      width: 10vw;
+    }
+
+  }
