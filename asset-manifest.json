@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Challenge_Tecnico_42i/static/css/main.94e1bb9d.css",
+    "main.js": "/Challenge_Tecnico_42i/static/js/main.61196690.js",
+    "static/js/787.7885da72.chunk.js": "/Challenge_Tecnico_42i/static/js/787.7885da72.chunk.js",
+    "index.html": "/Challenge_Tecnico_42i/index.html",
+    "main.94e1bb9d.css.map": "/Challenge_Tecnico_42i/static/css/main.94e1bb9d.css.map",
+    "main.61196690.js.map": "/Challenge_Tecnico_42i/static/js/main.61196690.js.map",
+    "787.7885da72.chunk.js.map": "/Challenge_Tecnico_42i/static/js/787.7885da72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94e1bb9d.css",
+    "static/js/main.61196690.js"
+  ]
+}
